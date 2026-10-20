@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Página Pareja 15: Diseño de Navegación</title>
+<link rel="stylesheet" type="text/css" href="css/Diseño_de_Navegación.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo">Wiki<span>Design</span></div>
+    <nav>
+      <a href="#">INICIO</a>
+      <a href="#">COLABORA</a>
+      <a href="#">ACERCA DE NOSOTROS</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="">
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    
+    <!-- BARRA LATERAL (SIDEBAR) -->
+    <aside>
+      <div class="sidebar-section">
+        <div class="sidebar-title">
+          <span>TEMAS</span>
+          <span>⬆</span>
+        </div>
+		  
+        <ul class="sidebar-menu">
+          <li><a href="#">Experiencia de Usuario - P1</a></li>
+          <li><a href="#">Diseño Web</a></li>
+          <li><a href="#">Design Thinking</a></li>
+          <li><a href="#">Diseño Centrado en el Usuario</a></li>
+          <li><a href="#">Diseño de Interacción</a></li>
+          <li><a href="#">Arquitectura de la Información</a></li>
+          <li><a href="#" class="active-link">Diseño de Navegación</a></li>
+          <li><a href="#">Diseño Visual</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">
+          <span>SUMARIO</span>
+          <span>⬆</span>
+        </div>
+        <ul class="sidebar-menu">
+          <li><a href="#">. Menús y Mareas de Navegación</a></li>
+          <li><a href="#">. Migas de Pan (Breadcrumbs)</a></li>
+          <li><a href="#">. Patrones de Navegación Mobile</a></li>
+          <li><a href="#">. Modelos Jerárquicos</a></li>
+          <li><a href="#">. Usabilidad y Orientación</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ÁREA DE CONTENIDO -->
+    <main>
+      <!-- TÍTULO PRINCIPAL SOLICITADO -->
+      <h1 class="main-title">¿Por qué es tan importante el Diseño de Navegación?&nbsp;</h1>
+
+      <!-- SECCIÓN 1 -->
+      <div class="section-grid">
+        <div class="text-card">
+          <p>El diseño de navegación es la estructura interactiva que permite a los usuarios desplazarse de manera intuitiva y eficiente a través de un sitio web o aplicación. Su objetivo principal es asegurar que el usuario siempre sepa dónde está, de dónde viene y a dónde puede ir a continuación.</p>
+          <p>Una navegación bien construida reduce la carga cognitiva, mejora el flujo de usuario y facilita la localización de contenidos. Para lograrlo, utiliza estructuras lógicas como menús principales, barras laterales, mapas de sitio y enlaces contextuales estandarizados.</p>
+          <p>&nbsp;Paso 1. Definir el contenido antes que la estructura<br>
+          </p>
+          <p>Paso 2. Agrupar y jerarquizar (arquitectura de la información)</p>
+          <p>Paso 3. Elegir el patrón adecuado según el caso&nbsp;</p>
+          <p>&nbsp;Paso 4. Diseñar el menú y sus etiquetas </p>
+          <p>Paso 5. Añadir señales de orientación</p>
+          <p>Paso 6. Diseñar para móvil (responsividad)&nbsp;</p>
+          <p>Paso 7. Probar la navegación (test de usuario)&nbsp;</p>
+<p>&nbsp;</p>
+        </div>
+        <img src="Imagenes/opt/02.svg" alt=""/>
+        <img src="Imagenes/opt/12982578_5116512.webp" alt=""/>
+        <div class="media-box">
+          <p> &nbsp;¿Dónde estoy? → El menú marca la sección actual, o hay "migajas de pan" (breadcrumbs) que muestran la ruta.</p>
+          <p>&nbsp;¿De dónde vengo? → El botón "atrás" o los breadcrumbs te dicen cómo llegaste aquí.</p>
+          <p>&nbsp;¿A dónde puedo ir? → El menú y los enlaces te muestran las opciones disponibles.</p>
+          <p>&nbsp; </p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 2: SUBTEMA -->
+      <h2 class="sub-title">SUB TEMA 1: PATRONES Y COMPONENTES DE NAVEGACIÓN</h2>
+
+      <div class="section-grid">
+        <div class="text-card">
+          <p>Los componentes clave del diseño de navegación incluyen las barras de menú (superiores o laterales), las "migas de pan" (breadcrumbs), los pies de página estructurados y los sistemas de búsqueda rápida. Seleccionar el patrón correcto depende de la profundidad de la información y los objetivos del usuario.</p>
+        </div>
+        <div class="grid-two-media">
+          <img src="Imagenes/opt/FigureItOutWhatGIFbyCBC-ezgif.com-webp-to-webm-converter.webp" alt=""/>
+          
+         
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="footer-logo">Wiki Design</div>
+    <p class="footer-text">
+      © 2026 Wiki Design. Todos los derechos reservados.<br>
+      El contenido de este sitio ha sido desarrollado con fines educativos y académicos. Los textos, imágenes y recursos utilizados pertenecen a sus respectivos autores y se emplean únicamente como material de consulta y aprendizaje.
+    </p>
+  </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  // ===== 1. DESPLEGABLES CON FLECHAS (TEMAS Y SUMARIO) =====
+  var secciones = document.querySelectorAll('.sidebar-section');
+  
+  secciones.forEach(function (seccion) {
+    var titulo = seccion.querySelector('.sidebar-title');
+    var lista = seccion.querySelector('.sidebar-menu');
+    var flecha = titulo ? titulo.querySelector('span:last-child') : null;
+
+    if (titulo && lista) {
+      titulo.style.cursor = 'pointer';
+      
+      if (flecha) {
+        flecha.style.display = 'inline-block';
+        flecha.style.transition = 'transform 0.25s ease';
+      }
+
+      titulo.addEventListener('click', function () {
+        var estaOculto = (lista.style.display === 'none');
+        lista.style.display = estaOculto ? 'block' : 'none';
+        
+        if (flecha) {
+          flecha.style.transform = estaOculto ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+      });
+    }
+  });
+
+  // ===== 2. BUSCADOR EN TIEMPO REAL =====
+  var buscador = document.querySelector('.search-box input');
+  
+  if (buscador) {
+    var elementosMenu = document.querySelectorAll('.sidebar-menu li');
+
+    buscador.addEventListener('input', function () {
+      var termino = buscador.value.trim().toLowerCase();
+
+      elementosMenu.forEach(function (li) {
+        var texto = li.textContent.toLowerCase();
+        if (termino === '' || texto.indexOf(termino) !== -1) {
+          li.style.display = '';
+        } else {
+          li.style.display = 'none';
+        }
+      });
+    });
+  }
+
+});
+</script>
+</body>
+	
+</html>
