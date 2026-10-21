@@ -156,7 +156,7 @@
         "texto": "Pareja 31 · Ignacio Vizuet y Alejandro Wong"
       },
       {
-        "url": "https://camaradabdn6.github.io/wiki_dise-o_navegacion_pareja15/#",
+        "url": "diseno-navegacion.html"",
         "texto": "Pareja 15 · Alondra Ketzally Herrera Perez y Ricardo Herrera Siliceo"
       },
       {
