@@ -143,7 +143,7 @@
       }
     ]
   },
-  {
+ {
     "icono": "diseno-navegacion",
     "tema": "Diseño de navegación",
     "parejas": [
@@ -156,13 +156,15 @@
         "texto": "Pareja 31 · Ignacio Vizuet y Alejandro Wong"
       },
       {
-        "url": "diseno-navegacion.html"",
+        "url": "diseno-navegacion.html",
         "texto": "Pareja 15 · Alondra Ketzally Herrera Perez y Ricardo Herrera Siliceo"
       },
       {
         "url": "https://disenodenavegacion.infinityfree.io/?i=1",
         "texto": "Pareja 7 · Crystian Jannahi Garzon Peralta"
       }
+    ]
+  },
     ]
   },
   {
