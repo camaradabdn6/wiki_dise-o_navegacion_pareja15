@@ -5,59 +5,29 @@
 <title>Página Pareja 15: Diseño de Navegación</title>
 <link rel="stylesheet" type="text/css" href="css/Diseño_de_Navegación.css">
 </head>
-
 <body>
-
   <!-- ENCABEZADO -->
   <header>
     <div class="logo">Wiki<span>Design</span></div>
     <nav>
-      <a href="#">INICIO</a>
-      <a href="#">COLABORA</a>
-      <a href="#">ACERCA DE NOSOTROS</a>
+<a href="https://uvmwiki.dreamhosters.com/index.html">INICIO</a>
+<a href="https://uvmwiki.dreamhosters.com/colabora/">COLABORA</a>      
+<a href="https://uvmwiki.dreamhosters.com/nosotros/">ACERCA DE NOSOTROS</a>
     </nav>
     <div class="search-box">
-      <input type="text" placeholder="">
-    </div>
+  <span class="search-icon">🔍</span>
+<input type="text" id="buscador" placeholder="Buscar...">
+</div>
+
   </header>
 
   <!-- CONTENEDOR PRINCIPAL -->
   <div class="container">
     
-    <!-- BARRA LATERAL (SIDEBAR) -->
-    <aside>
-      <div class="sidebar-section">
-        <div class="sidebar-title">
-          <span>TEMAS</span>
-          <span>⬆</span>
-        </div>
-		  
-        <ul class="sidebar-menu">
-          <li><a href="#">Experiencia de Usuario - P1</a></li>
-          <li><a href="#">Diseño Web</a></li>
-          <li><a href="#">Design Thinking</a></li>
-          <li><a href="#">Diseño Centrado en el Usuario</a></li>
-          <li><a href="#">Diseño de Interacción</a></li>
-          <li><a href="#">Arquitectura de la Información</a></li>
-          <li><a href="#" class="active-link">Diseño de Navegación</a></li>
-          <li><a href="#">Diseño Visual</a></li>
-        </ul>
-      </div>
+<div class="container">
 
-      <div class="sidebar-section">
-        <div class="sidebar-title">
-          <span>SUMARIO</span>
-          <span>⬆</span>
-        </div>
-        <ul class="sidebar-menu">
-          <li><a href="#">. Menús y Mareas de Navegación</a></li>
-          <li><a href="#">. Migas de Pan (Breadcrumbs)</a></li>
-          <li><a href="#">. Patrones de Navegación Mobile</a></li>
-          <li><a href="#">. Modelos Jerárquicos</a></li>
-          <li><a href="#">. Usabilidad y Orientación</a></li>
-        </ul>
-      </div>
-    </aside>
+  <!-- BARRA LATERAL (el script mete aquí su menú) -->
+  <aside class="sidebar"></aside>
 
     <!-- ÁREA DE CONTENIDO -->
     <main>
@@ -65,46 +35,34 @@
       <h1 class="main-title">¿Por qué es tan importante el Diseño de Navegación?&nbsp;</h1>
 
       <!-- SECCIÓN 1 -->
-      <div class="section-grid">
-        <div class="text-card">
-          <p>El diseño de navegación es la estructura interactiva que permite a los usuarios desplazarse de manera intuitiva y eficiente a través de un sitio web o aplicación. Su objetivo principal es asegurar que el usuario siempre sepa dónde está, de dónde viene y a dónde puede ir a continuación.</p>
-          <p>Una navegación bien construida reduce la carga cognitiva, mejora el flujo de usuario y facilita la localización de contenidos. Para lograrlo, utiliza estructuras lógicas como menús principales, barras laterales, mapas de sitio y enlaces contextuales estandarizados.</p>
-          <p>&nbsp;Paso 1. Definir el contenido antes que la estructura<br>
-          </p>
-          <p>Paso 2. Agrupar y jerarquizar (arquitectura de la información)</p>
-          <p>Paso 3. Elegir el patrón adecuado según el caso&nbsp;</p>
-          <p>&nbsp;Paso 4. Diseñar el menú y sus etiquetas </p>
-          <p>Paso 5. Añadir señales de orientación</p>
-          <p>Paso 6. Diseñar para móvil (responsividad)&nbsp;</p>
-          <p>Paso 7. Probar la navegación (test de usuario)&nbsp;</p>
-<p>&nbsp;</p>
-        </div>
-        <img src="Imagenes/opt/02.svg" alt=""/>
-        <img src="Imagenes/opt/12982578_5116512.webp" alt=""/>
-        <div class="media-box">
-          <p> &nbsp;¿Dónde estoy? → El menú marca la sección actual, o hay "migajas de pan" (breadcrumbs) que muestran la ruta.</p>
-          <p>&nbsp;¿De dónde vengo? → El botón "atrás" o los breadcrumbs te dicen cómo llegaste aquí.</p>
-          <p>&nbsp;¿A dónde puedo ir? → El menú y los enlaces te muestran las opciones disponibles.</p>
-          <p>&nbsp; </p>
-        </div>
-      </div>
-
-      <!-- SECCIÓN 2: SUBTEMA -->
-      <h2 class="sub-title">SUB TEMA 1: PATRONES Y COMPONENTES DE NAVEGACIÓN</h2>
-
-      <div class="section-grid">
-        <div class="text-card">
-          <p>Los componentes clave del diseño de navegación incluyen las barras de menú (superiores o laterales), las "migas de pan" (breadcrumbs), los pies de página estructurados y los sistemas de búsqueda rápida. Seleccionar el patrón correcto depende de la profundidad de la información y los objetivos del usuario.</p>
-        </div>
-        <div class="grid-two-media">
-          <img src="Imagenes/opt/FigureItOutWhatGIFbyCBC-ezgif.com-webp-to-webm-converter.webp" alt=""/>
-          
-         
-        </div>
-      </div>
-    </main>
-
+     <div class="section-grid">
+  <div class="text-card">
+    <p>El diseño de navegación es la estructura interactiva que permite a los usuarios desplazarse de manera intuitiva y eficiente a través de un sitio web o aplicación. Su objetivo principal es asegurar que el usuario siempre sepa dónde está, de dónde viene y a dónde puede ir a continuación.</p>
+    <p>Una navegación bien construida reduce la carga cognitiva, mejora el flujo de usuario y facilita la localización de contenidos. Para lograrlo, utiliza estructuras lógicas como menús principales, barras laterales, mapas de sitio y enlaces contextuales estandarizados.</p>
+    <p>Paso 1. Definir el contenido antes que la estructura</p>
+    <p>Paso 2. Agrupar y jerarquizar (arquitectura de la información)</p>
+    <p>Paso 3. Elegir el patrón adecuado según el caso</p>
+    <p>Paso 4. Diseñar el menú y sus etiquetas</p>
+    <p>Paso 5. Añadir señales de orientación</p>
+    <p>Paso 6. Diseñar para móvil (responsividad)</p>
+    <p>Paso 7. Probar la navegación (test de usuario)</p>
   </div>
+
+  <div class="media-column">
+    <img src="Imagenes/opt/02.svg" alt=""/>
+  </div>
+</div>
+
+<!-- Debajo: imagen a la izquierda + texto a la derecha -->
+<div class="section-grid">
+  <img src="Imagenes/opt/12982578_5116512.webp" alt=""/>
+  <div class="media-box">
+    <p>¿Dónde estoy? → El menú marca la sección actual, o hay "migajas de pan" (breadcrumbs) que muestran la ruta.</p>
+    <p>¿De dónde vengo? → El botón "atrás" o los breadcrumbs te dicen cómo llegaste aquí.</p>
+    <p>¿A dónde puedo ir? → El menú y los enlaces te muestran las opciones disponibles.</p>
+  </div>
+</div>
+
 
   <!-- PIE DE PÁGINA -->
   <footer>
@@ -167,5 +125,28 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <script src="js/script-navegacion.js"></script>
+	<script src="js/menu-temas.js"></script>
+		</main>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const input = document.getElementById('buscador');
+  const temas = document.querySelectorAll('.tema-boton, .section, article, li');
+
+  input.addEventListener('input', function () {
+    const texto = input.value.toLowerCase().trim();
+
+    temas.forEach(function (el) {
+      const contenido = el.textContent.toLowerCase();
+      if (texto === '') {
+        el.style.display = '';
+      } else {
+        el.style.display = contenido.includes(texto) ? '' : 'none';
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>

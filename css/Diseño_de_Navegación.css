@@ -1,315 +1,235 @@
-  /* Estructura de dos columnas (Texto a la izquierda, Imagen a la derecha) */
-  .section-grid {
-    display: grid;
-    grid-template-columns: 1.8fr 1fr; /* Divide el espacio adecuadamente */
-    gap: 30px;
-    align-items: start;
-    margin-bottom: 40px;
-  }
+  /* CSS Document */
 
-  /* Control de tamaño estricto para las imágenes */
-  .media-box {
-    width: 100%;
-    max-width: 320px; /* Evita que la imagen crezca demasiado */
-    height: 260px;    /* Altura proporcional fija */
-    object-fit: cover; /* Recorta la imagen para llenar el recuadro sin deformarse */
-    border: 2px solid #a3e635; /* Borde verde neón original */
-    border-radius: 20px;
-    display: block;
-    margin: 0 auto;
-  }
+/* Estructura de dos columnas (Texto a la izquierda, Imagen a la derecha) */
+.section-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 40px;
+}
 
-  /* Contenedor de doble imagen para el subtema */
-  .grid-two-media {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-  }
+.media-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
-  .grid-two-media .media-box {
-    height: 180px; /* Altura más pequeña cuando hay dos imágenes seguidas */
-  }
 
-  .text-card li {
-    margin-bottom: 6px;
-    line-height: 1.5;
-  }
+/* Control de tama�o estricto para las im�genes */
+.media-box {
+  width: 100%;
+  max-width: 320px;
+  height: 260px;
+  object-fit: cover;
+  border: 2px solid #a3e635;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
 
-  .text-card strong {
-    color: #111827; /* Texto en negrita resaltado en oscuro */
-  }
-  }
+/* Contenedor de doble imagen para el subtema */
+.grid-two-media {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
 
-  body {
-    background-color: #0b1021;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+.grid-two-media .media-box {
+  height: 180px;
+}
 
-  /* --- HEADER / NAVBAR --- */
-  header {
-    background-color: #231b42;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 40px;
-    border-bottom: 2px solid #362963;
-  }
+.text-card li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
 
-  .logo {
-    font-size: 26px;
-    font-weight: bold;
-    color: #8b72de;
-  }
+.text-card strong {
+  color: #111827;
+}
 
-  .logo span {
-    color: #a3e635;
-  }
+body {
+  background-color: #0b1021;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  nav a {
-    color: #8b72de;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
+/* --- HEADER / NAVBAR --- */
+header {
+  background-color: #231b42;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  border-bottom: 2px solid #362963;
+}
 
-  nav a:hover, nav a.active {
-    color: #a3e635;
-  }
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #8b72de;
+}
 
-  .search-box {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
+.logo span {
+  color: #a3e635;
+}
 
-  .search-box input {
-    background-color: transparent;
-    border: 2px solid #8b72de;
-    border-radius: 20px;
-    padding: 6px 15px 6px 35px;
-    color: #fff;
-    outline: none;
-    width: 220px;
-  }
+nav a {
+  color: #8b72de;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
 
-  .search-box::before {
-    content: "🔍";
-    position: absolute;
-    left: 10px;
-    font-size: 14px;
-    color: #8b72de;
-  }
+nav a:hover, nav a.active {
+  color: #a3e635;
+}
 
-  /* --- LAYOUT PRINCIPAL --- */
-  .container {
-    display: flex;
-    flex: 1;
-  }
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 
-  /* --- SIDEBAR LATERAL --- */
-  aside {
-    width: 260px;
-    background-color: #4f4d8c;
-    padding: 25px 20px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-  }
+.search-box input {
+  background-color: transparent;
+  border: 2px solid #8b72de;
+  border-radius: 20px;
+  padding: 6px 15px 6px 35px;
+  color: #fff;
+  outline: none;
+  width: 220px;
+}
 
-  .sidebar-section {
-    margin-bottom: 30px;
-  }
+.search-box::before {
+  content: "?";
+  position: absolute;
+  left: 10px;
+  font-size: 14px;
+  color: #8b72de;
+}
 
-  .sidebar-title {
-    color: #a3e635;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+/* --- LAYOUT PRINCIPAL --- */
+.container {
+  display: flex;
+  flex: 1;
+}
 
-  .sidebar-menu {
-    list-style: none;
-  }
+/* --- SIDEBAR LATERAL --- */
+aside {
+  width: 260px;
+  flex-shrink: 0;        /* que no se encoja */
+  align-self: stretch;   /* que ocupe todo el alto de la columna */
+  background-color: #4f4d8c;
+  padding: 25px 20px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
 
-  .sidebar-menu li {
-    margin-bottom: 12px;
-  }
+/* --- �REA DE CONTENIDO PRINCIPAL --- */
+main {
+  flex: 1;
+  padding: 30px;
+}
+.sidebar-section {
+  margin-bottom: 30px;
+}
 
-  .sidebar-menu a {
-    color: #d1d5db;
-    text-decoration: none;
-    font-size: 12px;
-    display: block;
-    text-transform: uppercase;
-    transition: 0.2s;
-  }
+.sidebar-title {
+  color: #a3e635;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .sidebar-menu a:hover, .sidebar-menu a.active-link {
-    color: #a3e635;
-    font-weight: bold;
-  }
+.sidebar-menu {
+  list-style: none;
+}
 
-  <!-- ÁREA DE CONTENIDO PRINCIPAL -->
-    <main>
-      <!-- TÍTULO PRINCIPAL SOLICITADO -->
-      <h1 class="main-title">¿Por qué es tan importante el Diseño de Navegación?</h1>
+.sidebar-menu li {
+  margin-bottom: 12px;
+}
 
-      <!-- SECCIÓN PRINCIPAL: EXPLICACIÓN Y OBJETIVOS -->
-      <div class="section-grid">
-        <div class="text-card">
-          <p><strong>Su objetivo principal:</strong> Es asegurar que el usuario siempre sepa dónde está, de dónde viene y a dónde puede ir. Una buena navegación responde adecuadamente tres preguntas en todo momento:</p>
-          <ul>
-            <li><strong>¿Dónde estoy?</strong> El menú marca la sección actual, o existen "migajas de pan" (breadcrumbs) que muestran la ruta.</li>
-            <li><strong>¿De dónde vengo?</strong> El botón "atrás" o los breadcrumbs te indican cómo llegaste hasta aquí.</li>
-            <li><strong>¿A dónde puedo ir?</strong> El menú y los enlaces contextuales te muestran todas las opciones disponibles.</li>
-          </ul>
-          <br>
-          <p><strong>Reduce la carga cognitiva:</strong> Significa ahorrarle esfuerzo mental al usuario. No tiene que pensar "¿dónde estaba eso?" porque todo está ubicado donde se espera. Menos decisiones equivalen a menos cansancio y a una mejor experiencia.</p>
-          <p><strong>Mejora el flujo de usuario:</strong> Permite que el usuario se mueva con fluidez por tu sitio web, evitando callejones sin salida o páginas perdidas.</p>
-        </div>
-        
-        <!-- ILUSTRACIÓN PRINCIPAL -->
-        <img src="Imagenes/busqueda/12982578_5116514.webp" class="media-box" alt="Diseño de Navegación">
-      </div>
+.sidebar-menu a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
 
-      <!-- SECCIÓN 2: GUÍA PASO A PASO -->
-      <h2 class="sub-title">"DE LA CIUDAD AL PLANO" - GUÍA PARA DISEÑAR LA NAVEGACIÓN DE UNA WEB</h2>
+.sidebar-menu a:hover, .sidebar-menu a.active-link {
+  color: #a3e635;
+  font-weight: bold;
+}
 
-      <div class="section-grid">
-        <div class="text-card">
-          <p><strong>Paso 1. Definir el contenido antes que la estructura:</strong> Antes de dibujar menús, realiza un inventario de contenido listando todas las páginas/secciones necesarias (Inicio, Productos, Contacto, etc.). Sin este listado, la navegación se diseña a ciegas.</p>
-          
-          <p><strong>Paso 2. Agrupar y jerarquizar (Arquitectura de la información):</strong> Utiliza notas o diagramas para agrupar las páginas por temas afines y decidir qué va primero, qué va dentro de qué y qué es secundario.</p>
-          
-          <p><strong>Paso 3. Elegir el patrón adecuado según el caso:</strong> Justifica tu elección considerando tres factores principales:
-            <ul>
-              <li>Volumen de contenido (¿pocas o muchas secciones?)</li>
-              <li>Tipo de usuario (¿novato o experto?)</li>
-              <li>Dispositivo (¿escritorio, móvil o ambos?)</li>
-            </ul>
-          </p>
+/* --- FOOTER --- */
+footer {
+  background-color: #1e1b4b;
+  padding: 25px;
+  text-align: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: auto;
+}
 
-          <p><strong>Paso 4. Diseñar el menú y sus etiquetas:</strong>
-            <ul>
-              <li><strong>Ubicación:</strong> Arriba (header) o en la barra lateral.</li>
-              <li><strong>Etiquetas claras:</strong> Usa términos entendibles ("Servicios" en vez de "Soluciones integrales 360").</li>
-              <li><strong>Número de opciones:</strong> Entre 5 y 7 opciones principales para no saturar.</li>
-              <li><strong>Orden lógico:</strong> Coloca lo más importante primero.</li>
-            </ul>
-          </p>
+.footer-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
 
-          <p><strong>Paso 5. Añadir señales de orientación:</strong> Implementa migajas de pan (breadcrumbs) tipo <i>(Inicio > Blog > Diseño)</i>, resalta la sección activa con color/subrayado y usa enlaces claramente distinguibles.</p>
+.footer-text {
+  color: #9ca3af;
+  font-size: 11px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+/* Compactar iconos del men� de temas */
+.panel-menu.temas .tema-boton {
+  font-size: 11px;
+  padding: 3px 6px;
+  gap: .4rem;
+  line-height: 1.2;
+}
 
-          <p><strong>Paso 6. Diseñar para móvil (Responsividad):</strong> Utiliza el menú hamburguesa (ícono de tres líneas), asegura puntos táctiles grandes y prueba los breakpoints en distintos dispositivos.</p>
+.panel-menu.temas .tema-boton img,
+.panel-menu.temas .icono-tema {
+  width: 30px;
+  height: 30px;
+}
+.search-box {
+  position: relative;
+}
 
-          <p><strong>Paso 7. Probar la navegación (Test de usuario):</strong> Pide a otra persona que realice tareas específicas en la web para observar si se pierde y corregir los puntos donde falle la navegación.</p>
-        </div>
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
 
-        <!-- GRIDS DE IMÁGENES COMPLEMENTARIAS -->
-        <div class="grid-two-media">
-          <img src="Imagenes/opt/01.webp" alt="Paso a paso 1" class="media-box">
-          <img src="Imagenes/busqueda/12982578_5116514.webp" alt="Paso a paso 2" class="media-box">
-        </div>
-      </div>
-    </main>
+.search-box input {
+  padding-left: 30px;
+}
+.panel-menu.temas .parejas a {
+  background-color: #c39bf0 !important;
+  border: 2px solid #9b6fd8 !important;
+  border-radius: 8px !important;
+  color: #ffffff !important;
+}
 
-  .section-grid {
-    display: grid;
-    grid-template-columns: 1.8fr 1fr;
-    gap: 30px;
-    margin-bottom: 40px;
-  }
-
-  .text-card {
-    background-color: #d1d5db;
-    color: #111827;
-    padding: 25px;
-    border-radius: 25px;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .text-card p {
-    margin-bottom: 15px;
-  }
-
-  .text-card p:last-child {
-    margin-bottom: 0;
-  }
-
-  .media-box {
-    border: 2px solid #a3e635;
-    min-height: 200px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .media-box::before, .media-box::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #a3e635;
-  }
-
-  .media-box {
-    width: 100%;
-    height: 100%;
-    min-height: 180px;
-    max-height: 250px;
-    object-fit: cover; /* Mantiene la proporción y recorta para llenar la casilla */
-    border: 2px solid #a3e635; /* Borde verde neón */
-    border-radius: 12px;
-    display: block;
-  }
-
-  .sub-title {
-    color: #a3e635;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-
-  .grid-two-media {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  /* --- FOOTER --- */
-  footer {
-    background-color: #1e1b4b;
-    padding: 25px;
-    text-align: center;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    margin-top: auto;
-  }
-
-  .footer-logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 10px;
-  }
-
-  .footer-text {
-    color: #9ca3af;
-    font-size: 11px;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.4;
-  }/* CSS Document */
 
